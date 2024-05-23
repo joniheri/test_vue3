@@ -64,6 +64,7 @@ export default {
           this.formInput
         );
         console.log("User added:", response.data);
+        localStorage.setItem("token", response.data.token);
         this.$router.push({ name: "users" });
       } catch (error) {
         console.error(
