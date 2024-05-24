@@ -4,7 +4,7 @@
       <div class="col-lg-4"></div>
       <div class="col-lg-4">
         <div class="card">
-          <div class="card-header">Form Login</div>
+          <div class="card-header text-center">Form Login</div>
           <form @submit.prevent="handleLogin">
             <div class="card-body">
               <div class="mb-2">
@@ -26,7 +26,7 @@
                 />
               </div>
             </div>
-            <div class="card-footer">
+            <div class="card-footer text-center">
               <button class="btn btn-danger btn-sm btn-w-100">Cancel</button>
               <button
                 type="submit"
@@ -77,4 +77,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.btn-w-100 {
+  width: 100px;
+}
+</style>
